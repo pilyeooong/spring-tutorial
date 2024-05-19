@@ -32,6 +32,7 @@ public class HelloController {
         Hello hello = new Hello();
         hello.setName("max");
         hello.setAge(30);
+        hello.setCity("Seoul");
 
         return hello;
     }
@@ -39,6 +40,15 @@ public class HelloController {
     static class Hello {
         private  String name;
         private  int age;
+        private String city;
+
+        public String getCity() {
+            return city;
+        }
+
+        public void setCity(String city) {
+            this.city = city;
+        }
 
         public String getName() {
             return name;
